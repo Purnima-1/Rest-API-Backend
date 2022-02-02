@@ -1,0 +1,24 @@
+
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/619f1dae4ef5fab0854d37d2
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{"name": "Aki",
+"subscribedToChannel": "SimpleOrigami"}
+###
+DELETE http://localhost:3000/subscribers/619f1dae4ef5fab0854d37d2
+
+###
+
+PATCH http://localhost:3000/subscribers/61981447a3c0724bf1f52396
+Content-Type: application/json
+{
+    "name": "Fancy"
+}
